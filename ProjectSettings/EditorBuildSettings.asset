@@ -8,6 +8,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/paper plane test.unity
+    guid: 90052b1cf4929424289f84d60293a134
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 87e14087fc2208947aaaf1c3d4eebf9b
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 1e62ce74f7f1b67458439b0194ed35b1
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: a943352d5450ed34680d01206411288c
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: e8405dfc106863e4198aa8296c7a83b9
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: f6be264a946cccf4eb9a9b4ba2263d7f
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: 99fe24a016e961f47b2674c71bd958c3
+  - enabled: 1
+    path: Assets/Scenes/Level 8.unity
+    guid: c1e6e5eca415a04479bcf6da2df69eb0
+  - enabled: 1
+    path: Assets/Scenes/Level 9.unity
+    guid: b10630e1b304ee44e8a1b8521afdf020
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: 515c9467e2a89b5409f9d6e9c5ba7f2f
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9e9502b3d803868498a6a737ff7a7ab5, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 0f9cde0ef2fc9b84b83b29d78cc3bc8d, type: 2}

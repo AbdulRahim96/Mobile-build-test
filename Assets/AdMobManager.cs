@@ -9,6 +9,7 @@ public class AdMobManager : MonoBehaviour
     public static AdMobManager Instance;
 
     [Header("Ad Unit IDs")]
+    public bool isTesting;
     public string bannerAdUnitId;
     public string interstitialAdUnitId;
     public string rewardedAdUnitId;
@@ -17,7 +18,6 @@ public class AdMobManager : MonoBehaviour
     private InterstitialAd interstitialAd;
     private RewardedAd rewardedAd;
     private bool isInitialized = false;
-
     void Awake()
     {
         if (Instance == null)
@@ -28,6 +28,22 @@ public class AdMobManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnValidate()
+    {
+        if(isTesting)
+        {
+            bannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
+            interstitialAdUnitId = "ca-app-pub-3940256099942544/1033173712";
+            rewardedAdUnitId = "ca-app-pub-3940256099942544/5224354917";
+        }
+        else
+        {
+            bannerAdUnitId = "ca-app-pub-7624627012840053/4569214634";
+            interstitialAdUnitId = "ca-app-pub-7624627012840053/2324542285";
+            rewardedAdUnitId = "ca-app-pub-7624627012840053/3561361084";
         }
     }
 
@@ -58,7 +74,7 @@ public class AdMobManager : MonoBehaviour
         }
 
         // Create a 320x50 banner at top of the screen
-        bannerView = new BannerView(bannerAdUnitId, AdSize.Banner, AdPosition.Top);
+        bannerView = new BannerView(bannerAdUnitId, AdSize.Banner, AdPosition.Bottom);
     }
 
     public void LoadAd()
@@ -149,6 +165,7 @@ public class AdMobManager : MonoBehaviour
         {
             Debug.Log("Interstitial not ready.");
         }
+        LoadInterstitialAd();
     }
 
     #endregion
@@ -197,10 +214,11 @@ public class AdMobManager : MonoBehaviour
         {
             rewardedAd.Show((Reward reward) =>
             {
-                // TODO: Reward the user.
-                Debug.Log(String.Format(rewardMsg, reward.Type, reward.Amount));
+                FindObjectOfType<PaperPlaneController>().SwitchMode(true);
+                PlayerPrefs.SetInt("unlocked", 1);
             });
         }
+        LoadInterstitialAd();
     }
 
     #endregion

@@ -151,3 +151,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 226420
+  packageName: Simple Mini Map
+  packageVersion: 
+  assetPath: Assets/UnitySimpleMiniMap/Demo/Arrow.png
+  uploadId: 0

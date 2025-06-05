@@ -11,13 +11,11 @@ namespace Arikan
 {
     public class MiniMapView : MonoBehaviour
     {
-        public static MiniMapView Instance;
         [Header("RectTransform Roots")]
         public RectTransform centeredDotCanvas;
         public RectTransform otherDotCanvas;
         [Header("Defult Sprite")]
         public Sprite defaultSprite;
-        public Sprite letterSprite;
         [Header("Default Dot Prefab")]
         public Image uiDotPrefab;
 #if ODIN_INSPECTOR
@@ -28,11 +26,6 @@ namespace Arikan
 
         private Dictionary<Transform, RectTransform> redDotMap = new Dictionary<Transform, RectTransform>();
         private KeyValuePair<Transform, RectTransform> mainMap = new KeyValuePair<Transform, RectTransform>();
-
-        private void Awake()
-        {
-            Instance = this;
-        }
 
         private void OnEnable()
         {
@@ -92,7 +85,7 @@ namespace Arikan
             UnfollowTarget(target);
 
             var uiDot = Instantiate(uiDotPrefab, otherDotCanvas);
-            uiDot.sprite = icon ?? letterSprite;
+            uiDot.sprite = icon ?? defaultSprite;
             redDotMap.Add(target, uiDot.transform as RectTransform);
             return uiDot;
         }

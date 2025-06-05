@@ -4408,10 +4408,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a1b0dfdade678419870f78e229467f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTesting: 0
-  bannerAdUnitId: ca-app-pub-7624627012840053/4569214634
-  interstitialAdUnitId: ca-app-pub-7624627012840053/2324542285
-  rewardedAdUnitId: ca-app-pub-7624627012840053/3561361084
+  isTesting: 1
+  bannerAdUnitId: ca-app-pub-3940256099942544/6300978111
+  interstitialAdUnitId: ca-app-pub-3940256099942544/1033173712
+  rewardedAdUnitId: ca-app-pub-3940256099942544/5224354917
 --- !u!1 &1442019872
 GameObject:
   m_ObjectHideFlags: 0
@@ -6068,7 +6068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2839551978247461804
 GameObject:
   m_ObjectHideFlags: 0

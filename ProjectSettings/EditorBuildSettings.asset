@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 10.unity
     guid: 515c9467e2a89b5409f9d6e9c5ba7f2f
+  - enabled: 0
+    path: Assets/UnitySimpleMiniMap/Demo/MiniMapDemo.unity
+    guid: fe7402c95a604be46a8364ec7b2490a5
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9e9502b3d803868498a6a737ff7a7ab5, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 0f9cde0ef2fc9b84b83b29d78cc3bc8d, type: 2}
